@@ -1,0 +1,8 @@
+{
+  "public": {
+    "analyticsSettings": {
+      // Add your analytics tracking id's here
+      "Google Analytics" : {"trackingId": "UA-65972545-1"}
+    }
+  }
+}

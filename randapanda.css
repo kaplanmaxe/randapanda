@@ -1,0 +1,55 @@
+/* CSS declarations go here */
+html, body {
+	background-color: #A6968D;
+}
+#video_count {
+	color:#F2F2F2;
+}
+#hashtag {
+	font-size:5em;
+	color:#D9AA32;
+	cursor:pointer;
+}
+#slogan {
+	font-family: 'Pacifico', cursive;
+	color:#F2F2F2;
+	font-size:2em;
+}
+.top-padding {
+	padding-top:2.5%;
+}
+#top-bar {
+	background-color: #121726;
+}
+.btn-default {
+	
+}
+#next, #getStarted {
+	color:#000000;
+	background-color:#D9AA32;
+	width:9em;
+}
+#sharer {
+	display:inline-block;
+	line-height:10px;
+	width:9em;
+}
+a:link {
+	color:#D9AA32;
+	text-decoration: none;
+}
+a:hover {
+	color:#D9AA32;
+	text-decoration: none;
+}
+a:visited {
+	color:#D9AA32;
+	text-decoration: none;
+}
+.highlight {
+	color:#D9AA32;
+}
+
+/*#medium {
+	width:50%;
+}*/

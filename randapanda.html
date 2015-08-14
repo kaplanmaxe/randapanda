@@ -1,0 +1,159 @@
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="RandaPanda: Random Solving Boredom" />
+    <meta property="og:description" content="The Leading Cure for Boredom Since 2015" />
+    <meta property="og:image" content="https://randapanda.com/images/logo.png">
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=518448738308278";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+<title>RandaPanda: The Leading Cure For Boredom</title>
+</head>
+
+<body>
+	{{> meta_url}}
+	<div class="container-fluid">
+		<div class="row" id="top-bar">
+			<div class="col-xs-4 text-left top-padding">
+				{{> video_count}}
+				
+			</div>
+			<div class="col-xs-4 text-center">
+				{{>hashtag}}
+			</div>
+			<div class="col-xs-4 text-right top-padding">
+				<div class="col-xs-6"><p></p></div>
+				<div class="col-xs-6 text-right">
+						{{> home_button}}
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 text-center">
+				<p id="slogan">The Leading Cure For Bordedom</p>
+
+				{{> toggleShare}}
+				{{> next_video}}
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12">
+				<p></p>
+				<div class="text-center">	
+			  		{{> video_player}}
+			  	</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="text-center">
+				<!-- <img src="/images/logo.png" alt="RandaPanda"/> -->
+			</div>
+		</div>
+	  	<div class="row">
+	  		<div class="text-center">
+	  			<!--{{> MyAds}}-->
+	  			<!-- {{> adsense}} -->
+	  		</div>
+	  	</div>
+  	</div>
+
+  	{{> googleAnalytics}}
+  	
+</body>
+<template name="hashtag">
+	<p id="hashtag">#RANDA</p>
+</template>
+<template name="meta_url">
+	{{#if vimeo_id}}
+		<meta property="og:url" content="https://randapanda.com/videos/{{vimeo_id}}" />
+	{{else}}
+		<meta property="og:url" content="https://randapanda.com/" />
+	{{/if}}
+</template>
+
+<template name="video_count">
+	<p id="video_count">1,000,000+ Random Videos and Counting!</p>
+</template>
+
+<template name="select">
+	<select id="medium" class="form-control">
+  	  <option value="vimeo" selected>Vimeo</option>
+	  <option value="youtube">YouTube</option>
+  	</select>
+</template>
+
+<template name="next_video">
+	{{#if button_text}}
+		<button id="next" type="submit" class="btn btn-default">{{button_text}}</button>
+	{{/if}}
+</template>
+
+<template name="video_player">
+  {{#if youtube_id}}
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/{{randa_id}}?autoplay=1" frameborder="0" allowfullscreen></iframe>
+  {{/if}}
+  {{#if vimeo_id}}
+  <iframe src="https://player.vimeo.com/video/{{vimeo_id}}/?autoplay=1" height="481px" width="800px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  
+  {{else}}
+  	{{>welcome_text}}
+  {{/if}}
+</template>
+
+<template name="googleAnalytics">
+
+</template>
+
+<template name="MyAds">
+	<div class="leaderboard"></div>
+</template>
+
+<template name="toggleShare">
+	{{#if vimeo_id}}
+		<button id="toggleShare" class="btn btn-default">Click to Share!</button>
+	{{/if}}
+	<div id="sharer">
+		<div id="fb-root"></div>
+		<div class="fb-share-button" data-href="https://randapanda.com/videos/{{vimeo_id}}" data-layout="button"></div>
+		{{#if vimeo_id}}
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://randapanda.com/videos/{{vimeo_id}}" data-text="Want to See Something Completely Random? #Randa" data-count="none">Tweet</a>
+		{{else}}
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="https://randapanda.com/" data-text="Want to See Something Completely Random? #Randa" data-count="none">Tweet</a>
+		{{/if}}
+	</div>
+</template>
+
+<template name="welcome_text">
+	<p><strong>Bored out of your mind? Need a good laugh? Or did you just get #Randa'd?</strong></p>
+	<p>Welcome to <strong><em>RandaPanda.</em></strong></p>
+		
+		<img src="/images/logo.png" style="width:5%;"/>
+		<br>
+
+	<p>Once you click the button below, you will gain access to over</p>
+	<p><strong><em>1,000,000 random videos</em></strong>.</p>
+	<p>Perhaps you're looking for a <strong><em>Japanese news clip</em></strong> or a <strong><em>Danish cartoon talking about architecture?</em></strong></p>
+	<p><strong><em>The possibilities are endless.</em></strong></p>
+	<p>P.S. Sorry for some videos not loading due to privacy issues. We do our best to remove them.</p>
+	<br>
+	 <button id="getStarted" class="btn btn-default">Start Watching!</button>
+</template> 
+
+<template name="home_button">
+	<button id="home" class="btn btn-default">WTH Is RandaPanda?!?!</button>
+</template>
+<!-- <template name="adsense">
+	<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9973023863045617"
+     data-ad-slot="7349945680"
+     data-ad-format="auto"></ins>
+</template> -->

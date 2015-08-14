@@ -1,0 +1,4 @@
+.meteor/local
+.meteor/meteorite
+python/DBConnect.py
+python/DBConnect.pyc
